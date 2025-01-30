@@ -1,0 +1,181 @@
+
+
+
+.container{
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  
+}
+.icon-container{
+  text-align: center;
+  padding: 0; /* Remove padding to reduce space */
+  margin:  30px; /* Add a small margin between icons */
+}
+.image1{
+  width: 125px; /* Adjust image size as needed */
+  height: 100px;
+  border: 1px solid #ccc; /* Add a border to the image */
+  padding: 25px;
+  cursor: pointer;
+  
+}
+
+.image2{
+  width: 125px; /* Adjust image size as needed */
+  height: 100px;
+  border: 1px solid #ccc; /* Add a border to the image */
+  padding: 25px;
+  cursor: pointer;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    background: white;
+    
+}
+.ablLogo{
+    height: 35px;
+
+}
+
+.left-logo{
+    padding-left: 20px;
+}
+
+.right-logos-container {
+    background-color: #00358d;     /* Blue background for the right section */
+    flex-grow: 1;     /* Blue section takes up remaining space */
+    height: 100%; /* Ensure it fills the header height */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50px 100%);
+    display: flex;
+    align-items: center;
+    position: relative;   /* For the backslash design */
+}
+.right-logos {
+    background-color: #00358d; /* Blue background for the right section */
+    padding: 45px;   /* Padding around the logo roshanDA moving left to rights */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1; /* Allows the blue section to expand to the right */
+}
+.roshanDA{
+    
+    position: relative;
+    margin-left: 0;
+    z-index: 1;
+    height: 82px;
+    width: 125px;
+}
+.ApkayDil {
+    margin-left: auto ; /* Push third logo to the right corner */ 
+    padding-right: 50px; /* Add space from the right edge */
+    width: 300px;
+}
+
+
+.card-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0; /* Optional: background color for better visibility */
+}
+
+.text-right-container {
+    position: absolute;
+    right: 0;
+    display: flex;
+    gap: 20px; /* Space between FAQ and Features */
+};
+
+
+
+.link-Feature{
+    color: #e76d2e;
+    padding-right: 60px;
+}
+
+.bottom-left-image{
+    position: absolute;
+  bottom: 10px; /* Adjust this value to control the distance from the bottom */
+  left: -30px; /* Adjust this value to control the distance from the left   
+ */
+  width: 270px; /* Adjust the width of the image */
+  height: 280px; /* Adjust the height of the image */
+}
+
+
+
+
+
+
+
+/* chat and call floating icon */
+
+.icon-container-2 {
+  position: fixed;
+    right: 0; /* direction of icon */
+    top: 40%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column; /* Stack icons vertically */
+    align-items: flex-end; /* Align items to the right */
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    transition: transform 0.8s;
+    
+}
+
+.icon-container-2:hover {
+  transform: translateY(-10px); /* Adjust to fit text and icons */
+  
+}
+
+.icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 0; /* to move the icons right side */
+}
+
+.icon img {
+  width: 35px; /* Adjust icon size as needed */
+  height: 30px;
+}
+
+.tooltip {
+  position: static;
+  right: 100%;
+  margin-left: 10px; /* Space between icon and text */
+  background-color: #fff;
+  color: #333;
+  padding: 15px 10px;  /* to make the icon and text equal in line */
+  border-radius: 3px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.icon-container-2:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  height: 60px;    /* to adjust the hight of icon-text background */
+  transform: translateX(10px);  /* Adjust icon on bg based on text length */
+}
+
+.separator {
+  width: 1px;
+  height: 5px; /* Adjust height as needed */
+}
+
+.icon-container-2:hover {
+  transform: translateY(-100px); /* Adjust the right side space and up/down with X/Y */
+}
